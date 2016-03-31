@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+	<head>
+    	<link href = "teste-do-mercado.css" rel = "stylesheet" type = "text/css"/>
+    </head>
+    <body>
+		<div id = "form">
+			<div id = "formTexts">
+				<label>Código:</label><br>
+				<label>Tipo:</label><br>
+				<label>Nome:</label><br>
+				<label>Quantidade:</label><br>
+				<label>Preço:</label><br>
+				<label>Tipo de Transação</label>
+			</div>
+			<div id = "formInputs">
+				<div class = "inputs">
+					<input type = "text" name = "codeInput"><br>
+				</div>
+				
+				<div  class = "inputs">
+					<input type = "text" name = "typeInput"><br>
+				</div>
+				
+				<div  class = "inputs">
+					<input type = "text" name = "nameInput"><br>
+				</div>
+				
+				<div class = "inputs">
+					<input type = "text" name = "quantInput"><br>
+				</div>
+				
+				<div class = "inputs">
+					<input type = "text" name = "priceInput"><br>
+				</div>
+				
+				<form>
+					<input 
+						type = "radio" 
+						name = "transactionInput" 
+						value = "Compra" checked> Compra<br>
+					<input 
+						type = "radio" 
+						name = "transactionInput" 
+						value = "Venda"> Venda<br>
+				</form>
+			</div>
+			<button 
+				onclick = "confirmTransaction()""
+				class = "button">Confirmar</button>
+		</div>
+		<div id = "headline">
+			<label id = "hlLabelCode" class = "transactionTexts"> Código: </label>
+			<label id = "hlLabelType" class = "transactionTexts"> Tipo: </label>
+			<label id = "hlLabelName" class = "transactionTexts"> Nome: </label>
+			<label id = "hlLabelQuant" class = "transactionTexts"> Quantidade: </label>
+			<label id = "hlLabelPrice" class = "transactionTexts"> Preço: </label>
+			<label id = "hlLabelTransaction" class = "transactionTexts"> Transação: </label>
+		</div>
+		<div id = "transactions"></div>
+		<script src = "jquery-2.2.2.min.js"></script>
+		<script src = "teste-do-mercado.js" type = "text/javascript"></script>
+    </body>
+</html>
